@@ -2,6 +2,17 @@
 
 PodBee is an open-source debugging pod that collects a curated stack of tools for everyday debugging needs.
 
+Version `0.1.1` includes the subsequent tools
+---
+- `wireshark`
+-  `tcpdump`
+-  `nmap`
+-  `iputils-ping`
+- `traceroute`
+-  `iftop`
+-  `mtr`
+-  `iperf`
+-  `dnsutils`
 ## Usage
 
 ```bash
