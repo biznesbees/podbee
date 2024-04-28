@@ -16,4 +16,4 @@ Contributions are welcome! Whether it's bug fixes, feature enhancements, or docu
 
 ## License
 
-Netbee is licensed under the [MIT License](LICENSE).
+PodBee is licensed under the [MIT License](LICENSE).
