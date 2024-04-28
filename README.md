@@ -5,7 +5,7 @@ PodBee is an open-source debugging pod that collects a curated stack of tools fo
 ## Usage
 
 ```bash
-kubectl run --image ghcr.io/biznesbees/podbee:v0.1.1
+kubectl run podbee --image ghcr.io/biznesbees/podbee:v0.1.1
 ```
 ## Contributing
 
