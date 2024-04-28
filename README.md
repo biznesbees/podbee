@@ -1,6 +1,6 @@
 # PodBee
 
-Podbee is an open-source debugging pod that collects a curated stack of tools for everyday debugging needs.
+PodBee is an open-source debugging pod that collects a curated stack of tools for everyday debugging needs.
 
 ## Usage
 
