@@ -13,7 +13,3 @@ kubectl run --image ghcr.io/biznesbees/podbee:v0.1.0
 ## Contributing
 
 Contributions are welcome! Whether it's bug fixes, feature enhancements, or documentation improvements, feel free to submit a pull request.
-
-## License
-
-PodBee is licensed under the [MIT License](LICENSE).
