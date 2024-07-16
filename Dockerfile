@@ -2,7 +2,7 @@ FROM python:3.11.9-slim
 
 WORKDIR /podbee/
 
-RUN apt update && apt install -y curl wireshark tcpdump nmap iputils-ping traceroute iftop mtr iperf dnsutils
+RUN apt update && apt install -y curl wireshark tcpdump nmap iputils-ping traceroute iftop mtr iperf dnsutils telnetd
 
 COPY . .
 
