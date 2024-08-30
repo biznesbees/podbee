@@ -19,7 +19,7 @@ data:
         linkerd.io/inject: disabled // if you have linkerd
     spec:
       containers:
-      - image: ghcr.io/biznesbees/podbee:v0.1.3
+      - image: ghcr.io/biznesbees/podbee:v0.1.4
         name: podbee
         command:
         - /bin/bash
