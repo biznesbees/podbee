@@ -6,7 +6,7 @@ PodBee is an open-source debugging pod that collects a curated stack of tools fo
 
 We recommend to store the pod configuration in a ConfigMap, and run the pod whenever you need it.
 
-```
+```yaml
 # podbee.yaml
 apiVersion: v1
 data:
@@ -16,8 +16,12 @@ data:
     metadata:
       name: podbee
       annotations:
-        linkerd.io/inject: disabled // if you have linkerd
+        linkerd.io/inject: disabled # if you have linkerd
     spec:
+      securityContext:
+        sysctls:
+          - name: net.ipv4.ping_group_range
+            value: 0 65536
       containers:
       - image: ghcr.io/biznesbees/podbee:v0.1.4
         name: podbee
@@ -40,7 +44,9 @@ data:
           runAsNonRoot: true
           runAsUser: 10001
           capabilities:
-            add: ["NET_ADMIN", "SYS_TIME"]
+            add:
+              - NET_ADMIN
+              - SYS_TIME  
       dnsPolicy: ClusterFirst
       restartPolicy: Always
 kind: ConfigMap
